@@ -1,13 +1,105 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the brand name to the left and all the navigation to the right.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Use flexbox properties and values to create columns.
- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Blog and gallery</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container article">
+        <a class="brand" href="#">
+          <img src="./assets/media/logo-altcampus.png" alt="logo" />
+        </a>
+        <nav class="nav">
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="article-container">
+        <article class="article article-1">
+          <div>
+            <h1>This the heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              accusamus odit tenetur voluptates hic fuga porro nostrum aliquam
+              sapiente autem unde illo architecto ea ipsum, eveniet, ut ipsa
+              quidem mollitia? Ducimus numquam corporis dolore perferendis,
+              culpa similique atque sint accusantium aliquam dolores
+              reprehenderit quam perspiciatis vero voluptates veritatis laborum
+              totam repellat iusto, deserunt maiores explicabo, ab quo eius
+              vitae. Tempore!
+            </p>
+          </div>
+          <img
+            width="50%"
+            src="./assets/media/david-billings-U6pLKRSQLis-unsplash.jpg"
+            alt="img"
+          />
+        </article>
+        <section class="gallery">
+          <h2>gallery</h2>
+          <div class="article gallery_img">
+            <img
+              src="./assets/media/forest-mountain.jpg"
+              alt="img1"
+              width="440"
+              height="227"
+            />
+            <img
+              src="./assets/media/forest-mountain4.jpg"
+              alt="img2"
+              width="440"
+              height="227"
+            />
+            <img
+              src="./assets/media/mountain.jpg"
+              alt="img3"
+              width="440"
+              height="227"
+            />
+            <img
+              src="./assets/media/mountain1.jpg"
+              alt="img4"
+              width="440"
+              height="227"
+            />
+            <img
+              src="./assets/media/mountain2.jpg"
+              alt="img5"
+              width="440"
+              height="227"
+            />
+            <img
+              src="./assets/media/National_Park_Mount.jpg"
+              alt="img6"
+              width="440"
+              height="227"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="article-container article">
+        <small>&copy 2021. All right reserved</small>
+        <nav class="article">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
